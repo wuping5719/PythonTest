@@ -1,2 +1,2 @@
 # PythonTest
-Small Example Of Python.
+Small Example Of Python3.
