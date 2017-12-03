@@ -21,7 +21,6 @@ end = datetime.datetime(2017,12,1)
 # 第一个参数是要获取的股票代码；
 # 第二个是源("yahoo"代表Yahoo财经),("google"代表谷歌财经) 
 # 第三个是开始日期，第四个是结束日期.
-# 雅虎, 谷歌数据源已经失效
 apple = web.DataReader("AAPL", "yahoo", start, end) 
 
 print(apple.head())
