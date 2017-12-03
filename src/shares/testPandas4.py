@@ -14,9 +14,10 @@ Created on 2017年12月3日
 import pandas as pd
 import pandas_datareader.data as web   # 导入 Data 需要导入的包和模块
 import datetime
+import matplotlib.pyplot as plt
 
 start = datetime.datetime(2017,1,1)
-end = datetime.datetime(2017,12,1)
+end = datetime.datetime(2017,2,1)
 
 apple = web.DataReader("AAPL", "yahoo", start, end) 
 microsoft = web.DataReader("MSFT", "yahoo", start, end)
@@ -29,3 +30,5 @@ stocks = pd.DataFrame({"AAPL": apple["Adj Close"],
 stocks.head()
 # stocks.plot(grid = True)
 stocks.plot(secondary_y = ["AAPL", "MSFT"], grid = True)
+
+plt.show()
